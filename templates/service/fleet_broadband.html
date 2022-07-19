@@ -1,0 +1,77 @@
+{% extends 'layouts.html' %}
+{% load static %}
+
+{% block content %}
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fleet_Broadband</title>
+    <link rel="stylesheet" href="{% static 'css/fleet_broadband.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+</head>
+<body>
+
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'Home' %}">Home</a></li>
+      </ol>
+      <h2>Fleet Broadband</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-img">
+            <img src=" {{ hero.image.url }} " alt="">
+        </div>
+
+        <div class="hero-info">
+            <h1>{{ hero.title }}</h1>
+            <p>{{ hero.discription }}</p>
+        </div>
+    </div>
+    <!-- end of hero section -->
+
+    <!-- about section -->
+    <div class="about-i">
+        <div class="about1">
+            <h3>{{ heroabout.title }}</h3>
+            <p>{{ heroabout.discription }}</p>
+        </div>
+
+        
+    </div>
+    <!-- end of about -->
+
+    <!-- fleet map section -->
+    <div class="fbb">
+        <h2>{{ fleetmap.title }}</h2>
+        <img src="{{ fleetmap.image.url }}" alt="">
+    </div>
+    <!-- fleet map section -->
+
+    <!-- footer section -->
+    <footer>
+        
+    </footer>
+    <!-- End of footer section -->
+
+    <script src="js/nav.js"></script>
+    <script src="js/home.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/partner.js"></script>
+</body>
+</html>
+
+
+
+{% endblock %}

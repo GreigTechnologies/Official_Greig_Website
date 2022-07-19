@@ -1,0 +1,462 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    padding-top: 0;
+    position: none;
+    /* font-family:  "Open Sans", sans-serif; */
+    /* height: 100%; */
+}
+
+/* body {
+    min-height: 100em;
+} */
+
+/* header section */
+.headerr {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.header-container {
+    width: 100%;
+    height: 10vh;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 28px;
+    margin-left: 1em;
+    color: #fff;
+}
+/* header sectio end */
+
+/* hero section */
+.hero {
+    width: 100%;
+    height: 50vh;
+    /* height: auto; */
+}
+
+.hero-sec1 {
+    width: 100%;
+    height: 50vh;
+    background: rgb(0, 0, 0);
+    /* background-image: url(/img/mariship_8.jpg); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+}
+
+.hero-sec1 h1 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero-sec1 p {
+    font-weight: 500;
+    font-size: 12px;
+    width: 90%;
+    color: white;
+}
+/* hero section end */
+
+/* about section */
+.about {
+    width: 100%;
+    height: 180vh;
+    /* background: #FFF; */
+    /* background: cornflowerblue; */
+}
+
+.about-con {
+    position: relative;
+    width: 100%;
+    height: 47vh;
+    /* background: turquoise; */
+    bottom: 20px;
+}
+
+.about-con h2 {
+    font-weight: 700;
+    font-size: 20px;
+    /* background: yellow; */
+    /* color: white; */
+    margin-bottom: .7em;
+    margin-left: .5em;
+}
+
+.about-con p {
+    font-weight: 500;
+    font-size: 14px;
+    /* background: white; */
+    width: 90%;
+    margin-left: 1em;
+}
+
+.about-con2 {
+    width: 100%;
+    height: 50vh;
+    /* background: yellowgreen; */
+    position: relative;
+}
+
+.about-con2 h2 {
+    width: 60%;
+    font-weight: 700;
+    font-size: 18px;
+    /* background: yellow; */
+    margin-top: .7em;
+    margin-bottom: .7em;
+    margin-left: 1em;
+}
+
+.about-con2 p {
+    font-weight: 500;
+    font-size: 13px;
+    /* background: white; */
+    width: 90%;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+.about-con2-img img {
+    width: 400px;
+    margin-left: 1em;
+}
+
+.about-con3 {
+    width: 100%;
+    height: 60vh;
+    /* background: teal; */
+    position: relative;
+}
+
+.about-con3 h2 {
+    width: 60%;
+    font-weight: 700;
+    font-size: 18px;
+    /* background: yellow; */
+    margin-top: .7em;
+    margin-bottom: .7em;
+    margin-left: 1em;
+}
+
+
+
+.about-con3 p {
+    font-weight: 500;
+    font-size: 13px;
+    /* background: white; */
+    width: 90%;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+.about-con3-img img {
+    width: 400px;
+    margin-left: 1em;
+}
+
+/* contact section */
+.contact {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: inherit; */
+}
+
+.contact-con {
+    width: 80%;
+    height: 20vh;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* border-style: solid; */
+    /* border-color: rgb(47, 206, 55); */
+    margin-top: 2.5em;
+    /* margin-bottom: 2em; */
+
+}
+
+.contact-con h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-con p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contact-con a {
+    font-weight: 700;
+    font-size: 25px;
+    color: #46b63b;
+    /* background-color: rgb(47, 206, 55); */
+    text-align: center;
+    transition: .5s ease;
+    margin-top: .3em;
+}
+
+.contact-con a:hover {
+    color: #000;
+}
+
+
+/* clients section */
+.logo-con {
+	/* position: relative; */
+	width: 100%;
+    height: 20vh;
+	margin-top: 1px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+.logo-con h2 {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.logo-con .cus-logos {
+	display: flex;
+	justify-content: center;
+}
+
+.logo-con .cus-logos img {
+	margin-top: 30px;
+	width: 90px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+@media only screen and (min-width:768px) {
+    .about {
+        height: 130vh;
+    }
+    .about-con {
+        height: 30vh;
+    }
+
+    .about-con2 {
+        height: 40vh;
+    }
+
+    .about-con3 {
+        height: 50vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .headerr {
+        height: 6em;
+    }
+    .header-container {
+        width: 1351px;
+        margin: 0 auto;
+        height: 6em;
+    }
+    .hero {
+        height: 20em;
+    }
+    .hero-sec1 {
+        width: 1349px;
+        margin: 0 auto;
+    }
+    .hero-sec1 {
+        height: 20em;
+        padding-left: 14em;
+    }
+
+    .hero-sec1 p {
+        width: 70%;
+        font-size: 1em;
+        line-height: 1.5em;
+        /* background: #3d3d3d49; */
+    }
+    .about {
+        height: 58em;
+        /* height: auto; */
+        /* background: blue; */
+        margin: 0;
+        padding: 0;
+    }
+    
+    /* .container {
+        width: 1080px;
+        margin: 0 auto;
+    } */
+
+    .about-con {
+        width: 1080px;
+        margin: 0 auto;
+    }
+    .about-con {
+        display: flex;
+        /* background: burlywood; */
+        height: 18em;
+        /* width: 70%; */
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .about-con h2 {
+        margin: 0;
+        font-size: 24px;
+        padding-bottom: .5em;
+    }
+    .about-con p {
+        /* width: 60%; */
+        margin: 0;
+        width: 70%;
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+
+    .about-con2 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    .about-con2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: coral; */
+
+    }
+
+    .about-con2-info {
+    /* background: chocolate; */
+    width: 50%;
+    }
+
+    .about-con2 {
+        /* background: cyan; */
+        height: 18em;
+        padding: 5em;
+    }
+
+    .about-con2-info h2{
+        /* background: rgb(47, 206, 55); */
+        width: 60%;
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .about-con2-info p {
+        font-size: 14px;
+        padding-top: 1em;
+    }
+
+    .about-con2-img img {
+        width: 500px;
+    }
+
+    .about-con2 p {
+        /* width: 100%; */
+        margin: 0;
+        font-weight: 400;
+        line-height: 1.7em;
+    }
+
+    .about-con3 {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    .about-con3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 18em;
+        position: relative;
+    }
+
+    .about-con3-img {
+        width: 50%;
+        z-index: 100;
+    }
+
+    .about-con3-img img {
+        width: 500px;
+        margin-left: -0.4em;
+    }
+
+    .about-con3 {
+        /* background: chocolate; */
+        padding: 5em;
+        /* display: flex; */
+        /* right: 0; */
+    }
+
+    /* .about-con3-info {
+        background: #3D3D3D;
+        
+    } */
+
+    .about-con3-info h2 {
+        margin-left: 4.3em;
+        color: #000;
+        font-size: 20px;
+        /* background: rgb(47, 206, 55); */
+        /* margin-top: 4em; */
+    }
+
+    .about-con3-info p {
+        margin-left: 6em;
+        width: 100%;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 1.9em;
+        /* margin: 0; */
+    }
+
+    /* contact section */
+    .contact {
+        height: 15em;
+        width: 1080;
+        margin: 0 auto;
+    }
+    .contact-con {
+        width: 500px;
+        height: 10em;
+        margin: 0 auto;
+        position: relative;
+    }
+
+
+    /* clients section */
+    .logo-con {
+        background: white;
+        height: 10em;
+    }
+
+    .cus-logos {
+        /* background: white; */
+        height: 8em;
+    }
+
+    .logo-con .cus-logos img {
+        width: 150px;
+        margin-top: 10px;
+    }
+}

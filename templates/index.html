@@ -1,0 +1,400 @@
+{% extends 'layouts.html' %}
+{% load static %}
+
+{% block title %}
+Home
+{% endblock %}
+
+{% block content %}
+{% include 'slider.html' with sliderdata=slider %}
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+        <div class="container">
+  
+          <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <h4 class="title"><a href="">Maritime</a></h4>
+                <p class="description">We Provide Secure maritime
+                  satellite communications from
+                  Point-To-Point SCPC Links To Mesh
+                  Networks. Delivering single-hop
+                  access between multiple remote
+                  locations.</p>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="">Services</a></h4>
+                <ul style="list-style: none; padding: 0;">
+                  <li><i class="ri-check-double-line"></i> At Sea</li>
+                  <li><i class="ri-check-double-line"></i> On Land</li>
+                  <li><i class="ri-check-double-line"></i> BGAN</li>
+                  <li><i class="ri-check-double-line"></i> Satellite Phones</li>
+                  <li><i class="ri-check-double-line"></i> Satellite capacity</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-tachometer"></i></div>
+                <h4 class="title"><a href="">TECHNOLOGY</a></h4>
+                <ul style="list-style: none; padding: 0;">
+                  <li><i class="ri-check-double-line"></i> VSAT Technology</li>
+                  <li><i class="ri-check-double-line"></i> iDirect VSAT</li>
+                  <li><i class="ri-check-double-line"></i> Meshed VSAT</li>
+                  <li><i class="ri-check-double-line"></i> SCPC</li>
+                  <li><i class="ri-check-double-line"></i> VSAT applications</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <div class="icon"><i class="bx bx-layer"></i></div>
+                <h4 class="title"><a href="">EQUIPMENT</a></h4>
+                <ul style="list-style: none; padding: 0; ">
+                  <li><i class="ri-check-double-line"></i> Mining</li>
+                  <li><i class="ri-check-double-line"></i> Maritime</li>
+                  <li><i class="ri-check-double-line"></i> Energy</li>
+                  <li><i class="ri-check-double-line"></i> Satellite TV RO</li>
+                  <li><i class="ri-check-double-line"></i> VSAT Telephony</li>
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Icon Boxes Section -->
+  
+      <!-- ======= About Us Section ======= -->
+      <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>{{ about.0.discription }}</p>
+          </div>
+  
+          <div class="row content">
+            <div class="col-lg-6">
+              <h4 class="title">{{ about.1.title }}</h4>
+              <p>
+                {{ about.1.discription }}
+              </p>
+              <ul>
+                <h4 class="title">Our Core Values</h4>
+                <li><i class="ri-check-double-line"></i> Innovation</li>
+                <li><i class="ri-check-double-line"></i> Team Work</li>
+                <li><i class="ri-check-double-line"></i> Continous Development</li>
+                <li><i class="ri-check-double-line"></i> Customer Focus & Responsiveness</li>
+              </ul>
+            </div>
+            <div class="col-lg-6 pt-4 pt-lg-0">
+              <h4 class="title">{{ about.2.title }}</h4>
+              <p>
+                {{ about.2.discription }}
+              </p>
+              <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End About Us Section -->
+  
+      <!-- ======= Clients Section ======= -->
+      <section id="clients" class="clients">
+        <div class="container" data-aos="zoom-in">
+  
+          <div class="clients-slider swiper">
+            <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><img src=" {{ partner.0.image.url }} " class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.1.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.2.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.3.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.4.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.5.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.6.image.url }}" class="img-fluid" alt=""></div>
+              <div class="swiper-slide"><img src="{{ partner.7.image.url }}" class="img-fluid" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+  
+        </div>
+      </section><!-- End Clients Section -->
+  
+      <!-- ======= Why Us Section ======= -->
+      <section id="why-us" class="why-us">
+        <div class="container-fluid">
+  
+          <div class="row">
+  
+            <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("{{ whyus.image.url }}");' data-aos="fade-right">
+              <!-- <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a> -->
+            </div>
+  
+            <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
+  
+              <div class="content">
+                <h3><strong>{{ whyus.title }}</strong></h3>
+                <p>
+                  {{ whyus.discription }}
+                </p>
+              </div>
+  
+              <div class="accordion-list">
+                <ul>
+                  <li data-aos="fade-up" data-aos-delay="100">
+                    <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> {{ whyusinfo.0.title }} </a>
+                    <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                      <p>
+                        <!-- {{ whyusinfo.0.discription }} -->
+                      </p>
+                    </div>
+                  </li>
+  
+                  <li data-aos="fade-up" data-aos-delay="200">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> {{ whyusinfo.1.title }} </a>
+                    <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        <!-- {{ whyusinfo.1.discription }} -->
+                      </p>
+                    </div>
+                  </li>
+  
+                  <li data-aos="fade-up" data-aos-delay="300">
+                    <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> {{ whyusinfo.2.title }} </a>
+                    <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                      <p>
+                        <!-- {{ whyusinfo.2.discription }} -->
+                      </p>
+                    </div>
+                  </li>
+  
+                </ul>
+              </div>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Why Us Section -->
+  
+      <!-- ======= Services Section ======= -->
+      <section id="services" class="services">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Services</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+  
+          <div class="row">
+            <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon-box">
+                <i class="bi bi-card-checklist"></i>
+                <h4><a href=" {% url 'oil' %} ">{{ service.0.title }}</a></h4>
+                <p> {{ service.0.discription }} </p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon-box">
+                <i class="bi bi-bar-chart"></i>
+                <h4><a href="{% url 'iridium' %}">{{ service.1.title }} </a></h4>
+                <p>{{ service.1.discription }}</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon-box">
+                <i class="bi bi-binoculars"></i>
+                <h4><a href="{% url 'fleet' %}">{{ service.2.title }}</a></h4>
+                <p>{{ service.2.discription }}</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon-box">
+                <i class="bi bi-brightness-high"></i>
+                <h4><a href="{% url 'ship' %}">{{ service.3.title }}</a></h4>
+                <p>{{ service.3.discription }}</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+              <div class="icon-box">
+                <i class="bi bi-calendar4-week"></i>
+                <h4><a href="#">{{ service.4.title }}</a></h4>
+                <p>{{ service.4.discription }}</p>
+              </div>
+            </div>
+            <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+              <div class="icon-box">
+                <i class="bi bi-briefcase"></i>
+                <h4><a href="#">{{ service.5.title }}</a></h4>
+                <p>{{ service.5.discription }}</p>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+      </section><!-- End Services Section -->
+  
+      
+      <!-- ======= Team Section ======= -->
+      <section id="team" class="team section-bg">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Team</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div>
+  
+          <div class="row">
+  
+            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{ team.0.image.url }}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4> {{team.0.name}} </h4>
+                  <span>{{team.0.title}}</span>
+                  <!-- <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p> -->
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{team.1.image.url}}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>{{team.1.name}}</h4>
+                  <span>{{team.1.title}}</span>
+                  <!-- <p>Aut maiores voluptates amet et quis praesentium qui senda para</p> -->
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{team.2.image.url}}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>{{team.2.name}}</h4>
+                  <span>{{team.2.title}}</span>
+                  <!-- <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p> -->
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
+              <div class="member d-flex align-items-start">
+                <div class="pic"><img src="{{team.3.image.url}}" class="img-fluid" alt=""></div>
+                <div class="member-info">
+                  <h4>{{team.3.name}}</h4>
+                  <span>{{team.3.title}}</span>
+                  <!-- <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p> -->
+                  <div class="social">
+                    <a href=""><i class="ri-twitter-fill"></i></a>
+                    <a href=""><i class="ri-facebook-fill"></i></a>
+                    <a href=""><i class="ri-instagram-fill"></i></a>
+                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Team Section -->
+  
+     
+  
+     
+  
+      <!-- ======= Contact Section ======= -->
+      <section id="contact" class="contact">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Contact Us</h2>
+          </div>
+  
+          <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+  
+            <div class="col-lg-5">
+              <div class="info">
+                <div class="address">
+                  <i class="bi bi-geo-alt"></i>
+                  <h4>Location:</h4>
+                  <p>{{ footerinfo.address }}</p>
+                </div>
+  
+                <div class="email">
+                  <i class="bi bi-envelope"></i>
+                  <h4>Email:</h4>
+                  <p>{{ footerinfo.email }}</p>
+                </div>
+  
+                <div class="phone">
+                  <i class="bi bi-phone"></i>
+                  <h4>Call:</h4>
+                  <p>{{ footerinfo.phone }}</p>
+                </div>
+  
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+  
+              <form action="" method="post">
+                {% csrf_token %}
+                <div class="row">
+                  <div class="col-md-6 form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="col-md-6 form-group mt-3 mt-md-0">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group mt-3">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group mt-3">
+                  <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                </div>
+              
+                <div class="text-center">
+                  <button class="btn btn-success" style="margin-top: 10px;" type="submit">Send Message</button>
+                </div>
+              </form>
+  
+            </div>
+  
+          </div>
+  
+        </div>
+      </section><!-- End Contact Section -->
+
+{% endblock %}

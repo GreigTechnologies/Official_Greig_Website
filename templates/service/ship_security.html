@@ -1,0 +1,105 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Ship Security and Vessel Tracking
+{% endblock %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ship Security and Vessel Tracking</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="stylesheet" href="{% static 'css/ship_security&vessel_tracking.css' %}">
+</head>
+<body>
+    <!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'Home' %}">Home</a></li>
+      </ol>
+      <h2>Ship Security and Vessel Tracking</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div style="background-image: url('{{ hero.image.url }}');" class="hero-sec1">
+            <h1>{{ hero.title }}</h1>
+            <p> {{ hero.discription }}</p>
+        </div>
+
+    </div>
+    <!-- end of hero sectiion -->
+
+    <!-- detail section -->
+
+    <div class="detail">
+        <div class="detail-container1">
+            <div class="detail-con1-info">
+                <h2>{{ shipdetail.0.title }}:</h2>
+                <p>{{ shipdetail.0.discription }}</p>
+            </div>
+            <div class="detail-con1-img">
+                <img src="{{ shipdetail.0.image.url }}" alt="">
+            </div>
+        </div>
+
+        <div class="detail-container2">
+            <div class="detail-con2-img">
+                <img src="{{ shipdetail.1.image.url }}" alt="">
+            </div>
+            <div class="detail-con2-info">
+                <h2>{{ shipdetail.1.title }} </h2>
+                <p>{{ shipdetail.1.discription }}</p>
+            </div>
+        </div>
+
+        <div class="detail-container1">
+            <div class="detail-con1-info">
+                <h2>{{ shipdetail.2.title }}</h2>
+                <p>{{ shipdetail.2.discription }}</p>
+            </div>
+            <div class="detail-con1-img">
+                <img src="{{ shipdetail.2.image.url }}" alt="">
+            </div>
+        </div>
+
+        <div class="detail-container2">
+            <div class="detail-con2-img">
+                <img src="{{ shipdetail.3.image.url }}" alt="">
+            </div>
+            <div class="detail-con2-info">
+                <h2>{{ shipdetail.3.title }}</h2>
+                <p>{{ shipdetail.3.discription }}</p>
+            </div>
+        </div>
+
+        <div class="detail-container1">
+            <div class="detail-con1-info">
+                <h2>{{ shipdetail.4.title }}</h2>
+                <p>{{ shipdetail.4.discription }}</p>
+            </div>
+            <div class="detail-con1-img" >
+                <img src="{{ shipdetail.4.image.url }}" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- detail section end -->
+
+
+</body>
+</html>
+
+{% endblock %}

@@ -1,0 +1,119 @@
+{% extends 'layouts.html' %}
+{% load static %}
+{% block title %}
+Iridium-Mobile
+{% endblock %}
+
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="{% static 'css/iridium-mobile.css' %}">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- <link rel="stylesheet" href="{% static '' %}css/home.css"> -->
+    <!-- <link rel="stylesheet" href=" {% static '' %} css/nav.css"> -->
+</head>
+<body>
+    
+   <!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'Home' %}">Home</a></li>
+      </ol>
+      <h2>Iridium Mobile</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+
+    <!-- hero section -->
+    <div class="hero">
+        <div style="background-image: url('{{hero.image.url}}');" class="hero-sec1">
+            <h1>{{hero.title}}</h1>
+            <p>{{hero.discription}}</p>
+        </div>
+
+        <div class="h-sec2">
+            <h2>Featured Applications</h2>
+        </div>
+
+        <div class="hero-all">
+            <div class="hero-sec2">
+
+                <div style="background-image: url('{{ herosec.0.image.url }}');" class="hero-con1">
+                    <div class="over">
+                        
+                        <div class="overlay"> 
+                            <p class="one"><i class="far fa-dot-circle"></i> {{ herosec.0.list1 }} </p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.0.list2 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.0.list3 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.0.list4 }}</p>
+                        </div>
+                        <h2>{{ herosec.0.title }}</h2>
+                    </div>
+                </div>
+
+                <div style="background-image: url('{{ herosec.1.image.url }}');" class="hero-con2">
+                    <div class="over">
+                        
+                        <div class="overlay"> 
+                            <p class="one"><i class="far fa-dot-circle"></i>{{ herosec.1.list1 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.1.list2 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.1.list3 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.1.list4 }}</p>
+                        </div>
+                        <h2>{{ herosec.1.title }}</h2>
+                    </div>
+                </div>
+
+                <div style="background-image: url('{{ herosec.2.image.url }}');" class="hero-con3">
+                    <div class="over">
+                        
+                        <div class="overlay"> 
+                            <p class="one"><i class="far fa-dot-circle"></i>{{ herosec.1.list1 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.2.list2 }}</p>
+                            <!-- <p><i class="far fa-dot-circle"></i>Maritime Safety Information(Iridium <span>safety cast)</span></p> -->
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.2.list3 }}</p>
+                            <p><i class="far fa-dot-circle"></i>{{ herosec.2.list4 }}</p>
+                            <p><i class="far fa-dot-circle"></i>LRIT</p>
+                            <p><i class="far fa-dot-circle"></i>Lifeboat communication</p>
+                        </div>
+                        <h2>{{ herosec.2.title }}</h2>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- end of hero sectiion -->
+
+    <!-- about section -->
+    <div class="ad">
+        <h1><div class="line"></div> Iridium Advantage</h1>
+        <p>The only satellite provider capable of offering voice and data services anywhere on Earth, Iridium is trusted by countless fleets to ensure connectivity and efficiency. Unlike other providers, Iridium cuts through communications congestion and provides coverage where VSAT falters. When other vessels “go dark,” fleets equipped with Iridium® and Iridium Connected® devices remain online and connected with small, solid-state terminals that avoid terrestrial interference and noise. Used as the primary connectivity solution or as a VSAT companion, Iridium is unparalleled in our network and solutions, enabling vessels to operate efficiently and safely.</p>
+    </div>
+    
+    <!-- end of about section -->
+
+    <!-- fleet map section -->
+    <div class="fbb">
+        <h2>{{ iridummap.title }}</h2>
+        <img src="{{ iridummap.image.url }}" alt="">
+    </div>
+    <!-- fleet map section -->
+
+
+</body>
+</html>
+
+{% endblock %}

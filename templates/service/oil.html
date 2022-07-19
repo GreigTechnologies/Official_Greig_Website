@@ -1,0 +1,107 @@
+{% extends 'layouts.html' %}
+{% load static %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime/Oil&Gas</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nav.css' %}">
+    <link rel="stylesheet" href="{% static 'css/oil&gas.css' %}">
+</head>
+<body>
+    <!-- navigation section -->
+    <header>
+        
+    </header>
+    <!-- navigation section end -->
+
+    <!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+    <div class="container">
+
+      <ol>
+        <li><a href="{% url 'Home' %}">Home</a></li>
+      </ol>
+      <h2>Marine Satellite Communication</h2>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+    <!-- hero section -->
+    <div class="hero">
+        <div style="background-image: url('{{hero.image.url}}');" class="hero-sec1">
+            <h1>GREIG TECHNOLOGIES LIMITED</h1>
+            <p>
+                {{hero.discription}}
+            </p>
+        </div>
+
+    </div>
+    <!-- end of hero sectiion -->
+
+    <!-- about section -->
+    <div class="about">
+        <div class="about-con">
+            <h2> {{heroabout.title}} </h2>
+            <!-- <p>We deliver a fully managed solution that includes design, implementation and on-site maintenance and support services.</p> -->
+            <p>{{heroabout.discription}}</p>
+        </div>
+
+        <div class="about-con2">
+            <div class="about-con2-info">
+                <h2>{{about.0.title}}</h2>
+                <p>{{about.0.discription}}</p>
+            </div>
+            <div class="about-con2-img">
+                <img src="{{about.0.image.url}}" alt="">
+            </div>
+        </div>
+
+        <div class="about-con3">
+            <div class="about-con3-img">
+                <img src="{{about.1.image.url}}" alt="">
+            </div>
+            <div class="about-con3-info">
+                <h2>{{about.1.title}}</h2>
+                <p>{{about.1.discription}}</p>
+            </div>
+        </div>
+    </div>
+    <!-- end of about section -->
+
+    <!-- contact section -->
+    <!-- <div class="contact">
+        <div class="contact-con">
+            <h1>Want to know more?</h1>
+            <p>Click here</p>
+            <a href="contact-us.html">Contact Us</a>
+        </div>
+    </div> -->
+    <!-- end of contact section -->
+
+        <!-- our partners -->
+        <section class="logo-con">
+            <h2 class="text-center font-weight-bold">Our Clients</h2>
+            <div class="cus-logos">
+                <div class="box-img"><img src=" {{ client.0.image.url }} " alt="logo"></div>
+                <div class="box-img"><img src="{{ client.1.image.url }}" alt="logo"></div>
+                <div class="box-img"><img src="{{ client.2.image.url }}" alt="logo"></div>
+                <div class="box-img"><img src="{{ client.3.image.url }}" alt="logo"></div>
+                <div class="box-img"><img src="{{ client.4.image.url }}" alt="logo"></div>
+            </div>
+        </section>
+        <!-- end of our partners -->
+
+
+
+</body>
+</html>
+
+{% endblock %}

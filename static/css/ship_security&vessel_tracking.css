@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background: #fff; */
+}
+
+/* header section */
+.headerr {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.header-container {
+    width: 100%;
+    height: 10vh;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 25px;
+    margin-left: 1em;
+    color: #fff;
+}
+/* header sectio end */
+
+/* hero section */
+.hero {
+    width: 100%;
+    height: 50vh;
+}
+
+.hero-sec1 {
+    width: 100%;
+    height: 50vh;
+    background: rgb(0, 0, 0);
+    /* background-image: url(/img/mariship_8.jpg); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.hero-sec1 h1 {
+    font-weight: 600;
+    font-size: 23px;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero-sec1 p {
+    width: 50%;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+}
+/* hero section end */
+
+/* detail section */
+.detail {
+    width: 100%;
+    height: 345vh;
+    background-color: #fff;
+}
+
+.detail-container1 {
+    width: 100%;
+    height: 65vh;
+    background: #fff;
+}
+
+.detail-con1-info h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: .6em;
+    margin-top: .5em;
+    margin-bottom: .3em;
+}
+
+.detail-con1-info p {
+    font-weight: 300px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+.detail-con1-img img {
+    width: 400px;
+    margin-left: .6em;
+}
+
+/* detail-con2 */
+.detail-container2 {
+    width: 100%;
+    height: 65vh;
+    background: #fff;
+}
+
+.detail-con2-info h2 {
+    font-weight: 600;
+    font-size: 18px;
+    margin-left: .6em;
+    margin-top: .5em;
+    margin-bottom: .3em;
+}
+
+.detail-con2-info p {
+    font-weight: 300px;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+.detail-con2-img img {
+    width: 400px;
+    margin-left: .6em;
+}
+/* detail section */
+
+/* contact section */
+.contact {
+    width: 100%;
+    height: 20vh;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #3D3D3D;
+}
+
+.contact-con {
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2em;
+}
+
+.contact-con h1 {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: .3em;
+}
+
+.contact-con p {
+    font-size: 12px;
+}
+
+.contact-con a {
+    font-weight: 700;
+    font-size: 25px;
+    color: #3A8646;
+    /* background-color: rgb(47, 206, 55); */
+    text-align: center;
+    transition: .5s ease;
+    margin-top: .3em;
+}
+
+.contact-con a:hover {
+    color: #000;
+}
+/* contact section end */
+
+
+@media only screen and (min-width:1200px) {
+    /* header section */
+    .headerr {
+        height: 6em;
+    }
+
+    .header-container {
+        width: 1351px;
+        margin: 0 auto;
+        height: 6em;
+    }
+
+    /* hero section */
+    .hero {
+        height: 20em;
+    }
+    .hero-sec1 {
+        width: 1351px;
+        margin: 0 auto;
+    }
+    .hero-sec1 {
+        height: 20em;
+        padding-left: 20em;
+    }
+
+    .hero-sec1 p {
+        font-size: .9em;
+        line-height: 1.5em;
+        /* background: #3d3d3d52; */
+    }
+
+    /* detail section */
+    .detail  {
+        height: 102em;
+    }
+    .detail-container1 {
+        width: 1339px;
+        margin: 0 auto;
+        height: 20em;
+        /* background: #3D3D3D; */
+    }
+
+    .detail-container1 {
+        display: flex;
+        padding: 3em;
+    }
+
+    .detail-con1-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: aqua; */
+    }
+    .detail-con1-info h2 {
+        font-size: 1.3em;
+    }
+    .detail-con1-info p {
+        width: 80%;
+        line-height: 1.5em;
+        font-size: 14px;
+    }
+
+    .detail-con1-img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-con1-img img {
+        width: 450px;
+        margin-left: 0;
+    }
+    
+    /* detail-container2 fix */
+    .detail-container2 {
+        width: 1339px;
+        margin: 0 auto;
+        height: 20em;
+    }
+
+    .detail-container2 {
+        display: flex;
+        padding: 5em;
+    }
+
+    .detail-con2-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        /* background-color: aqua; */
+    }
+    .detail-con2-info h2 {
+        font-size: 1.3em;
+        margin-left: 1.9em;
+    }
+    .detail-con2-info p {
+        width: 80%;
+        margin-left: 3em;
+        font-size: 14px;
+        
+        line-height: 1.5em;
+    }
+
+    .detail-con2-img {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .detail-con2-img img {
+        width: 420px;
+        margin-left: 0;
+    }
+
+    /* contact section */
+    .contact-con {
+        width: 1080px;
+        margin: 0 auto;
+    }
+
+    .contact {
+        /* background: darkolivegreen; */
+        height: 9em;
+    }
+
+    .contact-con {
+        background: white;
+    }
+}

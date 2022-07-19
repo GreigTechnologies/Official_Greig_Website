@@ -1,0 +1,670 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+.headerr {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.header-container {
+    width: 100%;
+    height: 10vh;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 28px;
+    margin-left: 1em;
+    color: #fff;
+}
+/* header sectio end */
+
+
+/* hero2 section */
+.hero {
+    width: 100%;
+    height: 200vh;
+    /* background: #3D3D3D; */
+    background: #F5F5F5;
+}
+
+.hero-sec1 {
+    width: 100%;
+    height: 50vh;
+    background: rgb(0, 0, 0);
+    /* background-image: url(/img/mariship_8.jpg); */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.hero-sec1 h1 {
+    font-weight: 600;
+    font-size: 30px;
+    color: white;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero-sec1 p {
+    font-weight: 300;
+    font-size: 13px;
+    color: white;
+    /* background: #3d3d3d54; */
+}
+
+.h-sec2 h2 {
+    font-weight: 400px;
+    text-align: center;
+    /* margin-left: 2.5em; */
+    padding-top: 2em;
+    margin-bottom: 2em;
+}
+
+.hero-all {
+    width: 100%;
+    height: 130vh;
+    /* background: chocolate; */
+    /* padding-left: 12.5em; */
+}
+
+.hero-sec2 {
+    width: 100%;
+    height: 60vh;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.hero-con1 {
+    width: 15em;
+    height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    background-size: cover;
+}
+
+.hero-con1 .over {
+    width: 100%;
+    height: 40vh;
+    background: #3d3d3d60;
+}
+
+.hero-con1 .over h2 {
+    /* width: 70%; */
+    /* background: rgba(47, 206, 55, 0.658); */
+    /* padding-top: 2em; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -13em;
+}
+
+.hero-con1 .overlay {
+    width: 100%;
+    height: 40vh;
+    padding-top: 3em;
+    background: rgba(0, 0, 0, 0.13);
+    transition: .5s ease;
+    margin-top: -1.2em;
+}
+
+.hero-con1 .overlay p {
+    color: rgba(255, 255, 255, 0);
+    padding-left: 5px;
+    /* width: 80%; */
+    transition: .5s ease;
+}
+
+.hero-con1 .overlay span {
+    padding-left: 1.5em;
+}
+
+.hero-con1 .overlay .far {
+    padding-right: 8px;
+}
+
+.hero-con1 .overlay p {
+    margin-left: 1.5em;
+    font-size: 14px;
+    font-weight: 300;
+    transition: .5s ease;
+    color: transparent;
+}
+
+.hero-con1:hover .overlay p  {
+    color: #fff;
+}
+
+.hero-con1 .overlay:hover, .hero-con1 .overlay:hover {
+    background: #3A8646;
+    color: white;
+    transition: .5s ease;
+    transform: scale(1.1);
+}
+
+.hero-con2 {
+    width: 15em;
+    height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    background-size: cover;
+}
+
+.hero-con2 .over {
+    width: 100%;
+    height: 40vh;
+    background: #3d3d3d60;
+}
+
+.hero-con2 .over h2 {
+    /* width: 70%; */
+    /* background: rgba(47, 206, 55, 0.658); */
+    /* padding-top: 2em; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -13em;
+}
+
+.hero-con2 .overlay {
+    width: 100%;
+    height: 40vh;
+    padding-top: 3em;
+    background: rgba(0, 0, 0, 0.13);
+    transition: .5s ease;
+    margin-top: -1.2em;
+}
+
+.hero-con2 .overlay p {
+    color: rgba(255, 255, 255, 0);
+    padding-left: 5px;
+    /* width: 90%; */
+    transition: .5s ease;
+}
+
+.hero-con2 .overlay span {
+    padding-left: 1.5em;
+}
+
+.hero-con2 .overlay .far {
+    padding-right: 8px;
+}
+
+.hero-con2 .overlay p {
+    margin-left: 1.5em;
+    font-size: 14px;
+    font-weight: 300;
+    /* color: rgb(19, 158, 26); */
+}
+
+.hero-con2:hover .overlay p  {
+    color: #fff;
+}
+
+.hero-con2 .overlay:hover, .hero-con2 .overlay:hover{
+    background: #3A8646;
+    color: white;
+    transform: scale(1.1);
+}
+
+.hero-con3 {
+    width: 15em;
+    height: 40vh;
+    margin-top: 20px;
+    margin-bottom: 2em;
+    margin-left: 2em;
+    background-size: cover;
+    /* transform: scale(1.1); */
+}
+
+.hero-con3 .over {
+    width: 100%;
+    height: 40vh;
+    background: #3d3d3d60;
+}
+
+.hero-con3 .over h2 {
+    /* width: 70%; */
+    /* background: rgba(47, 206, 55, 0.658); */
+    /* padding-top: 2em; */
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -13em;
+}
+
+.hero-con3 .overlay {
+    width: 100%;
+    height: 40vh;
+    padding-top: 3em;
+    background: rgba(0, 0, 0, 0.13);
+    transition: .5s ease;
+    margin-top: -1.2em;
+}
+
+.hero-con3 .overlay p {
+    color: rgba(255, 255, 255, 0);
+    padding-left: 5px;
+    /* width: 70%; */
+    transition: .5s ease;
+    /* text-align: center; */
+}
+
+.hero-con3 .overlay span {
+    padding-left: 1.5em;
+}
+
+.hero-con3 .overlay .far {
+    padding-right: 8px;
+}
+
+.hero-con3 .overlay p {
+    margin-left: 1.5em;
+    font-size: 14px;
+    font-weight: 300;
+    /* color: rgb(19, 158, 26); */
+}
+
+.hero-con3:hover .overlay p  {
+    color: #fff;
+}
+
+.hero-con3 .overlay:hover, .hero-con3 .overlay:hover {
+    background: #3A8646;
+    color: white;
+    transform: scale(1.1);
+    /* transition: .5s ease; */
+}
+/* about section */
+
+.ad {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.ad h1 {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0.6em;
+    /* background: rgb(47, 206, 55); */
+    color: black;
+    width: 70%;
+    text-align: center;
+}
+
+.ad p {
+    width: 70%;
+    font-size: 13px;
+    align-items: center;
+}
+
+.abt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background: #F5F5F5; */
+    background: rgba(47, 206, 55, 0.219);
+    height: 50vh;
+    width: 100%;
+}
+
+.abt-con {
+    position: relative;
+    width: 70%;
+    height: 40vh;
+    background: white;
+    /* left: 4.3em; */
+    /* top: 30px; */
+}
+
+.abt-con h2 {
+    font-weight: 700;
+    font-size: 15px;
+    /* letter-spacing: 1px; */
+    text-align: center;
+    padding-top: 10px;
+    /* background: rgb(19, 158, 26); */
+    color: black;
+}
+
+.abt-con p {
+    font-weight: 300;
+    font-size: 11px;
+    font-family: sans-serif;
+    line-height: 1em;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.abt-con .far {
+    padding-right: 5px;
+}
+/* about section end */
+
+/* contact section */
+.contact {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-con {
+    width: 80%;
+    height: 20vh;
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    /* border-style: solid; */
+    /* border-color: rgb(47, 206, 55); */
+    margin-top: 2.5em;
+    /* margin-bottom: 2em; */
+
+}
+
+.contact-con h1 {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.contact-con p {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.contact-con a {
+    font-weight: 700;
+    font-size: 25px;
+    color: #46b63b;
+    /* background-color: rgb(47, 206, 55); */
+    text-align: center;
+    transition: .5s ease;
+    margin-top: .3em;
+}
+
+.contact-con a:hover {
+    color: #000;
+}
+
+/* fleet map section */
+.fbb {
+    width: 100%;
+    height: 60vh;
+    /* background-color: #3D3D3D; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbb h2 {
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.fbb img {
+    width: 450px;
+    margin-top: 2em;
+}
+/* end of fleet section */
+
+/* Tablet view */
+@media only screen and (min-width:768px) {
+    /* hero section */
+    .hero {
+        height: 120vh;
+        /* background: coral; */
+    }
+
+    .hero-sec1 p {
+        width: 70%;
+    }
+
+    .hero-sec2 {
+        
+        display: flex;
+        flex-direction: row;
+    }
+
+    .hero-con1 {
+        
+        margin-left: 1.5em;
+        background-size: cover;
+    }
+
+    .hero-con1 .overlay {
+        margin-top: 0;
+    }
+
+    .hero-con2 {
+        margin-left: .1em;
+    }
+
+    .hero-con2 .overlay {
+        margin-top: 0;
+    }
+
+    .hero-con3 .overlay {
+        margin-top: 0;
+    }
+
+    .fbb img {
+        width: 500px;
+    }
+}
+
+
+/* destop view */
+@media only screen and (min-width: 1200px) {
+    /* .headerr {
+        height: 6em;
+    }
+    .header-container {
+        width: 1351px;
+        margin: 0 auto;
+        height: 6em;
+    } */
+    .hero {
+        height: 52em;
+    }
+
+    .hero-all {
+        height: 21em;
+        /* background: burlywood; */
+    }
+
+    .hero-sec1 {
+        width: 1349px;
+        margin: 0 auto;
+    }
+
+    .hero-sec1 {
+        height: 20em;
+    }
+
+    .hero-sec1 p {
+        width: 60%;
+        line-height: 1.5em;
+        font-size: 1em;
+    }
+
+    .hero-sec2 {
+        height: 20em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero-con1 {
+        
+        /* margin-left: 1.5em; */
+        width: 19em;
+        height: 19.2em;
+        background-size: cover;
+
+    }
+
+    .hero-con1 .over h2 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: -11em;
+        margin-left: 1em;
+    }
+
+    .hero-con1 .over {
+        height: 19.2em;
+    }
+
+    .hero-con1 .overlay {
+        margin-top: 0;
+        height: 19.2em;
+    }
+
+    .hero-con1 .overlay p {
+        padding-top: 9px;
+        width: 70%;
+        /* font-size: 14px; */
+    }
+
+    .hero-con2 {
+        width: 19em;
+        height: 19.2em;
+        margin-left: .1em;
+    }
+
+    .hero-con2 .over h2 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: -11em;
+        margin-left: 1em;
+    }
+
+    .hero-con2 .over {
+        height: 19.2em;
+    }
+
+    .hero-con2 .overlay {
+        margin-top: 0;
+        height: 19.2em;
+    }
+
+    .hero-con2 .overlay p {
+        padding-top: 9px;
+        width: 70%;
+    }
+
+    .hero-con3 {
+        width: 19em;
+        margin-left: .1em;
+        height: 19.2em;
+        /* height: 50vh; */
+        /* transform: scale(1.1); */
+    }
+
+    .hero-con3 .over h2 {
+        color: #fff;
+        font-size: 22px;
+        font-weight: 700;
+        text-align: left;
+        margin-top: -11em;
+        margin-left: 1em;
+    }
+
+    .hero-con3 .over {
+        height: 19.2em;
+    }
+
+    .hero-con3 .overlay {
+        margin-top: 0;
+        height: 19.2em;
+    }
+
+    .hero-con3 .overlay p {
+        /* padding-top: 5px; */
+        font-size: 14px;
+        width: 70%;
+    }
+
+    /* about section */
+    
+
+    .ad {
+        width: 1345px;
+        margin: 0 auto;
+        height: 19.2em;
+    }
+
+    .ad h1 {
+        font-size: 1.5em;
+        margin-top: -1em;
+        text-align: left;
+    }
+
+    .ad p {
+        /* width: 50%; */
+        font-size: .9em;
+        line-height: 1.5em;
+    }
+
+    .abt {
+        height: 22em;
+    }
+
+    .abt-con {
+        width: 900px;
+        margin: 0 auto;
+        height: 19.2em;
+        padding-left: 5em;
+    }
+    .abt-con h2 {
+        font-size: 1.5em;
+        text-align: left;
+    }
+
+    .abt-con p {
+        font-size: .9em;
+    }
+
+    .fbb {
+        width: 1275px;
+        margin: 0 auto;
+    }
+
+    .fbb {
+        height: 47em;
+        /* background: burlywood; */
+    }
+    .fbb img {
+        width: 1000px;
+    }
+}

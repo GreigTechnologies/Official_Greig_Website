@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header section */
+.headerr {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+}
+
+.header-container {
+    width: 100%;
+    height: 10vh;
+    background: #3D3D3D;
+    display: flex;
+    align-items: center;
+}
+
+.header-container h1 {
+    font-size: 28px;
+    margin-left: 1em;
+    color: #fff;
+}
+/* header sectio end */
+
+/* hero ssection */
+.hero {
+    width: 100%;
+    height: 90vh;
+    background: #3d3d3d7c;
+}
+.hero-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 350px;
+}
+
+.hero-info h1 {
+    /* font-family: Montserrat Alternates; */
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: .6em;
+    margin-bottom: .2em;
+    margin-top: 1em;
+}
+
+.hero-info p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 25px;
+    width: 90%;
+    margin-left: 1em;
+}
+/* hero section end */
+
+/* about section */
+.about-i {
+    width: 100%;
+    height: 40vh;
+    /* background: blue; */
+}
+
+.about1 {
+    width: 100%;
+    height: 50vh;
+    /* background: #3D3D3D; */
+}
+
+.about1 h3 {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: .5em;
+}
+
+.about1 p {
+    font-size: 12px;
+    margin-left: 1em;
+    line-height: 20px;
+}
+
+/* .about2 {
+    width: 100%;
+    background: #D1F4D3;
+    height: 100vh;
+}
+
+.about2 h2 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about2 p {
+    font-size: 13px;
+    line-height: 20px;
+    margin-left: 10px;
+}
+
+.about2 .far {
+    padding-right: 5px;
+}
+
+.about2 span {
+    font-weight: 700;
+} */
+/* end of about section */
+
+/* fleet map section */
+.fbb {
+    width: 100%;
+    height: 60vh;
+    /* background-color: #3D3D3D; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fbb h2 {
+    font-weight: 700;
+    font-size: 19px;
+    text-align: center;
+    margin-top: 1em;
+}
+
+.fbb img {
+    width: 450px;
+    margin-top: 2em;
+}
+/* end of fleet section */
+
+
+
+@media only screen and (min-width: 720px) {
+    .hero {
+        height: 80vh;
+    }
+
+    .about-i {
+        background-color: #D1F4D3;
+        height: 115vh;
+    }
+    
+
+    .about1 {
+        background: #fff;
+        height: 30vh;
+    }
+
+    /* .about2 {
+        background: #D1F4D3;
+        height: 75vh;
+    } */
+
+    .fbb img {
+        width: 500px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .headerr {
+        height: 6em;
+    }
+    .header-container {
+        width: 1351px;
+        margin: 0 auto;
+        height: 6em;
+    }
+
+    .hero {
+        display: flex;
+        height: 20em;
+    }
+
+    .hero{
+        width: 1351px;
+        margin: 0 auto;
+    }
+
+    .hero-img {
+        width: 50%;
+    }
+
+    .hero-info {
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* background: #3D3D3D; */
+    }
+
+    .hero-info h1 {
+        font-weight: 800;
+        font-size: 1.5em;
+    }
+
+    .hero-info p {
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+/* about section */
+    .about-i {
+        height: 20em;
+        background: greenyellow;
+    }
+
+    .about1 {
+        width: 1351px;
+        margin: 0 auto;
+        /* background-color: burlywood; */
+    }
+
+    .about1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 20em;
+    }
+
+    .about1 h3 {
+        font-size: 1.5em;
+    }
+
+    .about1 p {
+        width: 60%;
+        font-size: .9em;
+        line-height: 1.5em;
+        text-align: left;
+        
+    }
+
+    /* .about2 {
+        height: 31em;
+        padding-left: 8em;
+    }
+
+    .about2 {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .about2 h2 {
+        margin: 0%;
+        padding: .5em;
+        font-size: 1.3em;
+    }
+
+    .about2 p {
+        font-size: .9em;
+        padding-top: 1em;
+    } */
+
+    .fbb {
+        width: 1280px;
+        margin: 0 auto;
+    }
+
+    .fbb {
+        height: 47em;
+        /* background: burlywood; */
+    }
+    .fbb img {
+        width: 1000px;
+    }
+
+    /* contact section */
+    .contact {
+        height: 15em;
+        width: 1080;
+        margin: 0 auto;
+    }
+    .contact-con {
+        width: 500px;
+        height: 10em;
+        margin: 0 auto;
+    }
+}
